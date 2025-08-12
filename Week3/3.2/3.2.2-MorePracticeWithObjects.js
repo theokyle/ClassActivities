@@ -56,3 +56,17 @@ console.log(
 console.log(obj.list[1]);
 console.log(obj.list[4][1]);
 console.log(obj.list[5].f);
+
+const movie = {
+  id: "tt0084787",
+  title: "The Thing",
+  rating: "R",
+  year: 1982,
+  director: "John Carpenter",
+  cast: ["Kurt Russell", "Keith David", "Wilford Brimley"],
+  musicBy: "Ennio Morricone"
+};
+
+for (const key in movie) {
+  console.log(`${key}: ${movie[key]}`);
+}

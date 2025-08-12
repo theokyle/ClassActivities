@@ -1,0 +1,8 @@
+.books {
+  border: solid black 1px;
+  padding: 25px;
+}
+
+.books:hover {
+  background-color: lightblue;
+}
