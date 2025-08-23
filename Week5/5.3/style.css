@@ -1,0 +1,120 @@
+:root {
+  --primary-background: #EF476F;
+  --secondary-background: #1B9AAA;
+  --primary-text: #F8FFE5;
+  --secondary-text: #06D6A0;
+}
+
+header {
+  /* background: url(https://images.unsplash.com/photo-1528334713982-2d1fe11a157a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80) center center no-repeat; */
+  /* background-size: cover; */
+  background: url(https://media.istockphoto.com/id/160515715/photo/playful-kitty-cat.webp?a=1&b=1&s=612x612&w=0&k=20&c=7D8nj3xGpLspcnoiIZHkpgDmeD4YvfBZLEJtpKnijp8=) center center no-repeat;
+  background-image: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#textbox {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+header > a {
+  text-decoration: none;
+  background-color: white;
+  font-size: 1.5em;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 1em;
+}
+
+.flex > * {
+  border: 1px solid;
+  padding: 1rem;
+  margin: .25rem;
+  background-color: var(--primary-background);
+  color: var(--primary-text);
+  border-radius: 25px;
+}
+
+body > form {
+  margin: 2em;
+  padding: 1em;
+  border: 1px solid black;
+}
+
+@media (max-width: 549px){
+  .hidden--mobile {
+    display: none !important;
+  }
+
+  header {
+    height: 90vh;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  nav > i {
+    padding: 1rem;
+    font-size: 2em;
+  }
+
+  nav > ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0;
+  }
+
+  nav > ul > li {
+    padding: .5rem;
+    list-style-type: none;
+  }
+}
+
+@media (min-width: 550px){
+  header {
+    height: 60vh;
+  }
+
+  nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid;
+    padding: .5rem .5rem;
+    border-radius: 25px;
+  }
+
+  nav > .fa-bars {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  * {
+	flex-direction: column;
+  }
+}

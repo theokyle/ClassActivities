@@ -17,6 +17,43 @@ body > form {
   flex-direction: row-reverse;
 }
 
+.wrapper {
+  display: flex;
+}
+
+.wrapper > * {
+  border: 1px black solid;
+}
+.wrapper {
+  display: grid;
+  margin-top: 50px;
+  grid-template: repeat(2, 50px) / 200px 50px 100px;
+}
+.item1 {
+  background-color: aquamarine;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.item2 {
+  background-color: yellow;
+}
+.item3 {
+  background-color: aqua;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+.item4 {
+  background-color: violet;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.item5 {
+  background-color: greenyellow;
+}
+.item6 {
+  background-color: orange;
+}
+
 /* this adds a border around the flex items */
 .flex > * {
   border: 1px solid;
