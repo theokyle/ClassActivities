@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arcane Academy Application</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<main>
+  <h1>Arcane Academy — Student Application</h1>
+  <p>Submit your application to join the next cohort of apprentice wizards.</p>
+
+
+  <form id="applicationForm">
+
+    <label for="name">*Full Name</label>
+    <input type="text" name="name" id="name" placeholder="Albus Dumbledore" required>
+
+    <label for="email">*Email</label>
+    <input type="email" name="email" id="email" placeholder="headmaster@hogwarts.com" required>
+
+    <label for="age">Age</label>
+    <input type="number" name="age" id="age" min="10" max="120" placeholder="115">
+
+    <label for="house">House Preference</label>
+    <select name="house" id="house">
+      <option value="Draconis">Draconis</option>
+      <option value="Sylphora">Sylphora</option>
+      <option value="Terravine">Terravine</option>
+      <option value="Nocturna">Nocturna</option>
+    </select>
+
+    <label for="wandWood">Wand Wood:</label>
+    <input type="text" name="wandWood" id="wandWood" placeholder="Holly">
+
+    <label>Core Material</label>
+    <div class="choice">
+      <input type="radio" name="coreMaterial" id="phoenix" value="phoenix-feather" checked>
+      <label for="phoenix">Phoenix Feather</label>
+    </div>
+    <div class="choice">
+      <input type="radio" name="coreMaterial" id="dragon" value="dragon-heartstring">
+      <label for="dragon">Dragon Heartstring</label>
+    </div>
+    <div class="choice">
+      <input type="radio" name="coreMaterial" id="unicorn" value="unicorn-hair">
+      <label for="unicorn">Unicorn Hair</label>
+    </div>
+
+    <label>Prior Magic Experience</label>
+    <div class="choice">
+      <input type="checkbox" id="potions" name="experience" value="potions">
+      <label for="potions">Potions</label>
+    </div>
+    <div class="choice">
+      <input type="checkbox" id="charms" name="experience" value="charms">
+      <label for="charms">Charms</label>
+    </div>
+    <div class="choice">
+      <input type="checkbox" id="herbology" name="experience" value="herbology">
+      <label for="herbology">Herbology</label>
+      </div>
+    <div class="choice">
+    <input type="checkbox" id="flying" name="experience" value="flying">
+    <label for="flying">Flying</label>
+    </div>
+
+    <label for="statement">*Personal Statement</label>
+    <textarea name="statement" id="statement" minlength="30" cols="30" rows="5" required></textarea>
+
+    <div class="choice">
+    <input type="checkbox" name="conduct" id="conduct" required>
+    <label for="conduct">Agree to code of conduct</label>
+    </div>
+    <button type="submit">Submit Application</button>
+  </form>
+
+
+  <h2>Submitted Applications</h2>
+  <div id="applications"></div>
+</main>
+<script src="index.js"></script>
+</body>
+</html>
